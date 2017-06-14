@@ -4,6 +4,7 @@
     <string name="dialog_title">আপনি কি এই অ্যাকশান কার্যকর করতে চান ?</string>
     <string name="language">Bangla</string>
     <string name="ok">করুন</string>
+    <string name="ln">En</string>
     <string name="cancel">বাতিল করুন</string>
     <string name="dialog_message">ফ্যাক্টরি রিসেট হল এমন একটি পদ্ধতি যা আপনার সেটকে একবারই নতুন অবস্তায় নিয়ে যায়।</string>
     <string name="rest">রিসেট ফোন</string>

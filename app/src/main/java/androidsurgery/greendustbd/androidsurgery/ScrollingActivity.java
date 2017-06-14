@@ -7,17 +7,17 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 import com.akexorcist.localizationactivity.LocalizationActivity;
 
-public class ScrollingActivity extends LocalizationActivity implements View.OnClickListener {
+public class ScrollingActivity extends LocalizationActivity  {
     private Button button1, button2,button3,button4,button5,button6,button7,button8,button9,button10;
+    private int _clicks = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -31,8 +31,6 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
 
 
 
-        findViewById(R.id.it).setOnClickListener(this);
-        findViewById(R.id.ja).setOnClickListener(this);
 
         button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
@@ -109,18 +107,19 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
 //        fs = (Button) findViewById(R.id.transition_scene_layoutid_cache);
 
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//
-////                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-////                        .setAction("Action", null).show();
-//
-//
-//               }
-//        });
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int count = ++_clicks;
+                if(count == 1)
+                    setLanguage("it");
+                    if(count == 2)
+                        setLanguage("ja");
+                if(count == 3)
+                    setLanguage("it");
+               }
+        });
 //
 //        FloatingActionButton fab2 = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -133,26 +132,26 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
 //        });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_scrolling, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_scrolling, menu);
+//        return true;
+//    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
 //    private void showAddUserDialog() {
 //        View dialog = LayoutInflater.from(this).inflate(R.layout.dialog_add_user, null);
@@ -671,14 +670,14 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
     }
 
 
-    public void onClick(View v) {
-        int id = v.getId();
-        if (id == R.id.it) {
-            setLanguage("it");
-        } else if (id == R.id.ja) {
-            setLanguage("ja");
-        }
-    }
+//    public void onClick(View v) {
+//        int id = v.getId();
+//        if (id == R.id.it) {
+//            setLanguage("it");
+//        } else if (id == R.id.ja) {
+//            setLanguage("ja");
+//        }
+//    }
 
 
 }

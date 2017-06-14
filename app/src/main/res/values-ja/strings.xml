@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Android Surgery</string>
+    <string name="ln">বাং</string>
     <string name="action_settings">Change The Lenguage</string>
     <string name="dialog_title">Do you want reset you phone?</string>
     <string name="rest">Rest Phone</string>

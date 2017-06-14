@@ -251,17 +251,6 @@
             </RelativeLayout>
         </TableRow>
 
-        <Button
-            android:id="@+id/it"
-            android:text="Italy"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"/>
-        <Button
-            android:id="@+id/ja"
-            android:text="Japan"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"/>
-
 
     </TableLayout>
 
