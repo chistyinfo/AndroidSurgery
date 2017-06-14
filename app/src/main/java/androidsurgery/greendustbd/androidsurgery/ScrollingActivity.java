@@ -33,7 +33,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         getSupportActionBar().setTitle(R.string.app_name);
 
         try {
-            GifDrawable gifFromResource = new GifDrawable( getResources(), R.drawable.hablu );
+            GifDrawable gifFromResource = new GifDrawable( getResources(), R.drawable.hablu2);
         } catch (IOException e) {
             e.printStackTrace();
         }
