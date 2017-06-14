@@ -25,6 +25,11 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
         setContentView(R.layout.activity_scrolling);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        //customly change app name
+        getSupportActionBar().setTitle(R.string.app_name);
+
+
+
 
         findViewById(R.id.it).setOnClickListener(this);
         findViewById(R.id.ja).setOnClickListener(this);
@@ -163,7 +168,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
         builder.setTitle(getString(R.string.dialog_title));
         builder.setMessage(getString(R.string.dialog_message));
 
-        String positiveText = getString(android.R.string.ok);
+        String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -190,7 +195,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
 
                     }
                 });
-        String negativeText = getString(android.R.string.cancel);
+        String negativeText = getString(R.string.cancel);
         builder.setNegativeButton(negativeText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -213,7 +218,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
         builder.setTitle(getString(R.string.dialog_title));
         builder.setMessage(getString(R.string.imei));
 
-        String positiveText = getString(android.R.string.ok);
+        String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -247,7 +252,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
 
                     }
                 });
-        String negativeText = getString(android.R.string.cancel);
+        String negativeText = getString(R.string.cancel);
         builder.setNegativeButton(negativeText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -270,7 +275,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
         builder.setTitle(getString(R.string.dialog_title));
         builder.setMessage(getString(R.string.dialog_message));
 
-        String positiveText = getString(android.R.string.ok);
+        String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -320,7 +325,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
         builder.setTitle(getString(R.string.dialog_title));
         builder.setMessage(getString(R.string.dialog_message));
 
-        String positiveText = getString(android.R.string.ok);
+        String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -370,7 +375,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
         builder.setTitle(getString(R.string.dialog_title));
         builder.setMessage(getString(R.string.dialog_message));
 
-        String positiveText = getString(android.R.string.ok);
+        String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -420,7 +425,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
         builder.setTitle(getString(R.string.dialog_title));
         builder.setMessage(getString(R.string.dialog_message));
 
-        String positiveText = getString(android.R.string.ok);
+        String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -447,7 +452,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
 
                     }
                 });
-        String negativeText = getString(android.R.string.cancel);
+        String negativeText = getString(R.string.cancel);
         builder.setNegativeButton(negativeText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -470,7 +475,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
         builder.setTitle(getString(R.string.dialog_title));
         builder.setMessage(getString(R.string.dialog_message));
 
-        String positiveText = getString(android.R.string.ok);
+        String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -520,7 +525,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
         builder.setTitle(getString(R.string.dialog_title));
         builder.setMessage(getString(R.string.dialog_message));
 
-        String positiveText = getString(android.R.string.ok);
+        String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -570,7 +575,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
         builder.setTitle(getString(R.string.dialog_title));
         builder.setMessage(getString(R.string.dialog_message));
 
-        String positiveText = getString(android.R.string.ok);
+        String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -620,7 +625,7 @@ public class ScrollingActivity extends LocalizationActivity implements View.OnCl
         builder.setTitle(getString(R.string.dialog_title));
         builder.setMessage(getString(R.string.dialog_message));
 
-        String positiveText = getString(android.R.string.ok);
+        String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
                 new DialogInterface.OnClickListener() {
                     @Override

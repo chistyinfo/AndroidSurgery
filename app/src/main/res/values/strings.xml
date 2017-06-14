@@ -1,8 +1,3 @@
 <resources>
     <string name="app_name">Android Surgery</string>
-    <string name="action_settings">Change The Lenguage</string>
-    <string name="dialog_title">Do you want reset you phone?</string>
-    <string name="dialog_message">Factory reset means its make your phone as like new one</string>
-    <string name="imei">Factory reset means its make your phone *#06# as like new one</string>
-    <string name="sample_youtube_app">When you open the YouTube app, you time from the Guide.</string>
 </resources>
