@@ -15,6 +15,10 @@ import android.widget.Button;
 
 import com.akexorcist.localizationactivity.LocalizationActivity;
 
+import java.io.IOException;
+
+import pl.droidsonroids.gif.GifDrawable;
+
 public class ScrollingActivity extends LocalizationActivity  {
     private Button button1, button2,button3,button4,button5,button6,button7,button8,button9,button10;
     private int _clicks = 0;
@@ -28,8 +32,11 @@ public class ScrollingActivity extends LocalizationActivity  {
         //customly change app name
         getSupportActionBar().setTitle(R.string.app_name);
 
-
-
+        try {
+            GifDrawable gifFromResource = new GifDrawable( getResources(), R.drawable.hablu );
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
         button1 = (Button) findViewById(R.id.button1);
