@@ -12,55 +12,60 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="2dp"
-        android:layout_marginTop="2dp">
+        android:layout_marginTop="4dp">
 
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="2dp"
-            android:weightSum="1"
-            android:layout_weight="0.5">
+            android:weightSum="1">
             <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
+                android:background="#009900"
                 android:layout_margin="2dp"
                 android:layout_weight="0.5">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#009900"
                     android:src="@mipmap/ic_launcher"
                     android:id="@+id/button1"
                     android:text="@string/rest"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/transparent"
                     android:textSize="18sp"
                     android:gravity="center|bottom"
                     android:singleLine="false"
                     android:paddingBottom="10dp"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_reset" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:layout_margin="2dp"
+                android:background="#ff0066"
                 android:layout_weight="0.5">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/button2"
-                    android:background="#ff0066"
+                    android:background="@color/transparent"
                     android:text="@string/imei"
                     android:textSize="18sp"
                     android:gravity="center|bottom"
                     android:singleLine="false"
                     android:paddingBottom="10dp"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_common"
+                    android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
 
@@ -68,48 +73,53 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:weightSum="1"
-            android:layout_margin="2dp"
-            android:layout_weight="0.5">
+            android:layout_margin="2dp">
             <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:layout_margin="2dp"
+                android:background="#333399"
                 android:layout_weight="0.5">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/button3"
-                    android:background="#333399"
-                    android:text="LOCK STATUS"
+                    android:background="@color/transparent"
+                    android:text="@string/lockstatus"
                     android:textSize="18sp"
+                    android:textColor="#ffff"
                     android:gravity="center|bottom"
                     android:paddingBottom="10dp"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_centerInParent="true"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_locked"
+                    android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:layout_margin="2dp"
+                android:background="#ff3300"
                 android:layout_weight="0.5">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/button4"
-                    android:text="BATTERY INFO"
-                    android:background="#ff3300"
+                    android:text="@string/infoBattery"
+                    android:background="@color/transparent"
                     android:textSize="18sp"
                     android:gravity="center|bottom"
                     android:paddingBottom="10dp"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentStart="true" />
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_battery"
+                    android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
 
@@ -117,137 +127,155 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:weightSum="1"
-            android:layout_margin="2dp"
-            android:layout_weight="0.5">
+            android:layout_margin="2dp">
             <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:layout_margin="2dp"
+                android:background="#cc33ff"
                 android:layout_weight="0.5">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/button5"
-                    android:text="FTA VERSION"
+                    android:text="@string/fta"
                     android:textSize="18sp"
-                    android:background="#cc33ff"
+                    android:background="@color/transparent"
                     android:gravity="center|bottom"
                     android:paddingBottom="10dp"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_common"
+                    android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="2dp"
+                android:background="#0099ff"
                 android:layout_weight="0.5">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/button6"
-                    android:text="TOUCH SCREEN CODE"
-                    android:background="#0099ff"
+                    android:text="@string/touchscreenver"
+                    android:background="@color/transparent"
                     android:textSize="18sp"
                     android:gravity="center|bottom"
                     android:paddingBottom="10dp"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_touchscreen"
+                    android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:weightSum="1"
-            android:layout_margin="2dp"
-            android:layout_weight="0.5">
+            android:layout_margin="2dp">
             <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:layout_margin="2dp"
+                android:background="#ff0066"
                 android:layout_weight="0.5">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/button7"
-                    android:text="VIBRATE BACK LIGHT"
+                    android:text="@string/vibratbacklight"
                     android:textSize="18sp"
-                    android:background="#ff0066"
+                    android:background="@color/transparent"
                     android:gravity="center|bottom"
                     android:paddingBottom="10dp"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_centerInParent="true"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_wifi"
+                    android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="2dp"
+                android:background="#3333cc"
                 android:layout_weight="0.5">
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:id="@+id/button8"
-                    android:text="HARDWARE AND SOFT"
+                    android:text="@string/hardwaresoftware"
                     android:textSize="18sp"
-                    android:background="#3333cc"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/transparent"
+                    android:textColor="#ffff"
                     android:gravity="center|bottom"
                     android:paddingBottom="10dp"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_hrsoft"
+                    android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:weightSum="1"
-            android:layout_margin="1dp"
-            android:layout_weight="0.5">
+            android:layout_margin="1dp">
             <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:layout_margin="2dp"
+                android:background="@color/black"
                 android:layout_weight="0.5">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/button9"
-                    android:text="Diagonostic"
+                    android:text="@string/diagonastic"
                     android:textSize="18sp"
-                    android:textColor="#ffff"
-                    android:background="#1a1a00"
+                    android:textColor="@color/white"
+                    android:background="@color/transparent"
                     android:gravity="center|bottom"
-                    android:paddingBottom="10dp"/>
+                    android:paddingBottom="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_diagono"
+                    android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:layout_margin="2dp"
+                android:background="#009933"
                 android:layout_weight="0.5">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/button10"
-                    android:text="Dump System mode"
+                    android:text="@string/dumpmode"
                     android:textSize="18sp"
-                    android:background="#009933"
+                    android:background="@color/transparent"
                     android:gravity="center|bottom"
                     android:paddingBottom="10dp"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_common"
+                    android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
 

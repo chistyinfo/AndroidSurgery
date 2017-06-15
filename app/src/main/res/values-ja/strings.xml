@@ -7,6 +7,23 @@
     <string name="dialog_message">Factory reset means its make your phone as like new one</string>
     <string name="imei">IMEI</string>
     <string name="lockstatus">Lock Status</string>
+    <string name="infoBattery">Battery and Phone info</string>
+    <string name="fta">Version of FTA</string>
+    <string name="touchskin">Touch Skin Code</string>
+    <string name="vibratbacklight">Vibrate &amp; backlight test</string>
+    <string name="hardwaresoftware">Hardware and Software Details</string>
+    <string name="diagonastic">Diagonostic Config</string>
+    <string name="dumpmode">Dump System Mode</string>
+    <string name="camerainfo">Camera Info</string>
+    <string name="factoryhardreset">Factory hard Reset</string>
+    <string name="datacable">Data Cable Control</string>
+    <string name="gpstest">GPS test</string>
+    <string name="wifimac">WiFi mac Address</string>
+    <string name="bluetrooth">Bluetrooth device info</string>
+    <string name="ramversion">Ram Version</string>
+    <string name="touchscreenver">Touch Screen Version</string>
+    <string name="dispaytest">Display Test</string>
+    <string name="packetlouf">Packet Loof test</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
 

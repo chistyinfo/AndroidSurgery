@@ -32,13 +32,15 @@ public class ScrollingActivity extends LocalizationActivity  {
         //customly change app name
         getSupportActionBar().setTitle(R.string.app_name);
 
+        //Showing gif
+
         try {
             GifDrawable gifFromResource = new GifDrawable( getResources(), R.drawable.hablu2);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-
+        //Buttons
         button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,7 +115,7 @@ public class ScrollingActivity extends LocalizationActivity  {
 
 //        fs = (Button) findViewById(R.id.transition_scene_layoutid_cache);
 
-
+        //Floating buttons
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,53 +129,18 @@ public class ScrollingActivity extends LocalizationActivity  {
                     setLanguage("it");
                }
         });
-//
-//        FloatingActionButton fab2 = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-////                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-////                        .setAction("Action", null).show();
-//            }
-//        });
+
+
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_scrolling, menu);
-//        return true;
-//    }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
 
-//    private void showAddUserDialog() {
-//        View dialog = LayoutInflater.from(this).inflate(R.layout.dialog_add_user, null);
-//        final SwipeDismissDialog swipeDismissDialog = new SwipeDismissDialog.Builder(this)
-//                .setView(dialog)
-//                .build()
-//                .show();
-//    }
-
+    //Dialogs
     private void customDialog() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
         builder.setMessage(getString(R.string.dialog_message));
-
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
                 new DialogInterface.OnClickListener() {
@@ -308,7 +275,7 @@ public class ScrollingActivity extends LocalizationActivity  {
 
                     }
                 });
-        String negativeText = getString(android.R.string.cancel);
+        String negativeText = getString(R.string.cancel);
         builder.setNegativeButton(negativeText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -358,7 +325,7 @@ public class ScrollingActivity extends LocalizationActivity  {
 
                     }
                 });
-        String negativeText = getString(android.R.string.cancel);
+        String negativeText = getString(R.string.cancel);
         builder.setNegativeButton(negativeText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -408,7 +375,7 @@ public class ScrollingActivity extends LocalizationActivity  {
 
                     }
                 });
-        String negativeText = getString(android.R.string.cancel);
+        String negativeText = getString(R.string.cancel);
         builder.setNegativeButton(negativeText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -508,7 +475,7 @@ public class ScrollingActivity extends LocalizationActivity  {
 
                     }
                 });
-        String negativeText = getString(android.R.string.cancel);
+        String negativeText = getString(R.string.cancel);
         builder.setNegativeButton(negativeText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -558,7 +525,7 @@ public class ScrollingActivity extends LocalizationActivity  {
 
                     }
                 });
-        String negativeText = getString(android.R.string.cancel);
+        String negativeText = getString(R.string.cancel);
         builder.setNegativeButton(negativeText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -608,7 +575,7 @@ public class ScrollingActivity extends LocalizationActivity  {
 
                     }
                 });
-        String negativeText = getString(android.R.string.cancel);
+        String negativeText = getString(R.string.cancel);
         builder.setNegativeButton(negativeText,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -658,7 +625,7 @@ public class ScrollingActivity extends LocalizationActivity  {
 
                     }
                 });
-        String negativeText = getString(android.R.string.cancel);
+        String negativeText = getString(R.string.cancel);
         builder.setNegativeButton(negativeText,
                 new DialogInterface.OnClickListener() {
                     @Override

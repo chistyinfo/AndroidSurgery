@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">এন্ড্েড সারজেন</string>
+    <string name="app_name">অ্যান্ড্রয়েড সার্জন </string>
     <string name="action_settings">ভাষা পরিবর্তন কুরুন</string>
     <string name="dialog_title">আপনি কি এই অ্যাকশান কার্যকর করতে চান ?</string>
     <string name="language">Bangla</string>
@@ -12,19 +12,19 @@
     <string name="lockstatus">লক স্ট্যাটাস</string>
     <string name="infoBattery">ব্যাটারি ও ফোনের তথ্য </string>
     <string name="fta">FTA  এর ভার্সন</string>
-    <string name="touchskin">রিসেট ফোন</string>
-    <string name="vibratbacklight">টর্াচ</string>
-    <string name="hardwaresoftware">রিসেট ফোন</string>
-    <string name="diagonastic">রিসেট ফোন</string>
-    <string name="dumpmode">রিসেট ফোন</string>
-    <string name="camerainfo">রিসেট ফোন</string>
+    <string name="touchskin">টাচ স্কিন কোড্</string>
+    <string name="vibratbacklight">ভাইব্রেট ও ব্যাকলাইট টেস্ট </string>
+    <string name="hardwaresoftware">হার্ডওয়্যার সফটওয়্যার ডিটেইলস </string>
+    <string name="diagonastic">ডায়াগনস্টিক  কনফিগার</string>
+    <string name="dumpmode">ডাম্প সিস্টেম মোড</string>
+    <string name="camerainfo">ক্যামেরা তথ্য জানতে</string>
     <string name="factoryhardreset">রিসেট ফোন</string>
-    <string name="datacable">রিসেট ফোন</string>
-    <string name="gpstest">রিসেট ফোন</string>
-    <string name="wifimac">রিসেট ফোন</string>
-    <string name="bluetrooth">রিসেট ফোন</string>
-    <string name="ramversion">রিসেট ফোন</string>
-    <string name="touchscreenver">রিসেট ফোন</string>
-    <string name="dispaytest">রিসেট ফোন</string>
-    <string name="packetlouf">রিসেট ফোন</string>
+    <string name="datacable">ডাটা ক্যাবল কন্ট্রোল</string>
+    <string name="gpstest">জিপিএস  টেস্ট</string>
+    <string name="wifimac">ওয়াইফাই ম্যাক এড্রেস</string>
+    <string name="bluetrooth">ব্লটুথ ডিভাইস ইনফো</string>
+    <string name="ramversion">যামের ভার্সন</string>
+    <string name="touchscreenver">টাচস্ক্রীন  ভার্সন</string>
+    <string name="dispaytest">ডিসপে টেস্ট</string>
+    <string name="packetlouf">প্যাকেট লুফ টেস্ট </string>
 </resources>
