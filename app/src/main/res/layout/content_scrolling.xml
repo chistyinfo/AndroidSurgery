@@ -58,7 +58,7 @@
                     android:background="@color/transparent"
                     android:text="@string/imei"
                     android:textSize="@dimen/text_size"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:gravity="center|bottom"
                     android:singleLine="false"
                     android:paddingBottom="5dp"/>
@@ -300,7 +300,7 @@
                     android:id="@+id/button11"
                     android:text="@string/camerainfo"
                     android:textSize="@dimen/text_size"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:background="@color/transparent"
                     android:gravity="center|bottom"
                     android:paddingBottom="5dp"
@@ -380,7 +380,7 @@
                     android:text="@string/gpstest"
                     android:textSize="@dimen/text_size"
                     android:background="@color/transparent"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:gravity="center|bottom"
                     android:paddingBottom="5dp"/>
                 <ImageView
@@ -479,7 +479,7 @@
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_margin="2dp"
-            android:background="#00ff99"
+            android:background="#a3c2c2"
             android:layout_weight="0.5">
             <Button
                 android:layout_width="match_parent"
@@ -488,8 +488,10 @@
                 android:text="@string/touchscreenver"
                 android:textSize="@dimen/text_size"
                 android:background="@color/transparent"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:gravity="center|bottom"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
                 android:paddingBottom="5dp"/>
             <ImageView
                 android:layout_width="40dp"
@@ -508,7 +510,7 @@
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="2dp"
-                android:background="#ff6600"
+                android:background="#aa80ff"
                 android:layout_weight="0.5">
                 <Button
                     android:layout_width="match_parent"
@@ -542,7 +544,7 @@
                     android:text="@string/touchscreenver"
                     android:textSize="@dimen/text_size"
                     android:background="@color/transparent"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:gravity="center|bottom"
                     android:paddingBottom="5dp"/>
                 <ImageView
