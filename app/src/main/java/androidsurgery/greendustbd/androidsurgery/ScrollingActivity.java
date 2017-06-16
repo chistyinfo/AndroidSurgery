@@ -36,7 +36,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         //Showing gif
 
         try {
-            GifDrawable gifFromResource = new GifDrawable( getResources(), R.drawable.hablu2);
+            GifDrawable gifFromResource = new GifDrawable( getResources(), R.drawable.jiny);
         } catch (IOException e) {
             e.printStackTrace();
         }
