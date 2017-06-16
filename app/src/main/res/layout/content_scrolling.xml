@@ -70,7 +70,6 @@
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
-
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="0dp"
@@ -125,7 +124,6 @@
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
-
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="0dp"
@@ -312,7 +310,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_diagono"
+                    android:src="@drawable/ic_camera"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
@@ -366,7 +364,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_common"
+                    android:src="@drawable/ic_usb_cable"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
@@ -389,7 +387,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_common"
+                    android:src="@drawable/ic_gps"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
@@ -448,6 +446,60 @@
             </RelativeLayout>
         </TableRow>
         <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_margin="1dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:background="#ff6600"
+            android:layout_weight="0.5">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button17"
+                android:text="@string/ramversion"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:gravity="center|bottom"
+                android:paddingBottom="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_diagono"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:background="#00ff99"
+            android:layout_weight="0.5">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button18"
+                android:text="@string/touchscreenver"
+                android:textSize="@dimen/text_size"
+                android:background="@color/transparent"
+                android:textColor="@color/white"
+                android:gravity="center|bottom"
+                android:paddingBottom="5dp"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_touchscreen"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </TableRow>
+        <TableRow
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:weightSum="1"
@@ -461,7 +513,7 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/button17"
+                    android:id="@+id/button19"
                     android:text="@string/ramversion"
                     android:textSize="@dimen/text_size"
                     android:textColor="@color/white"
@@ -486,7 +538,7 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/button180"
+                    android:id="@+id/button20"
                     android:text="@string/touchscreenver"
                     android:textSize="@dimen/text_size"
                     android:background="@color/transparent"
@@ -501,60 +553,7 @@
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:weightSum="1"
-            android:layout_margin="1dp">
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="70dp"
-                android:layout_margin="2dp"
-                android:background="#3399ff"
-                android:layout_weight="0.5">
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/button19"
-                    android:text="@string/dispaytest"
-                    android:textSize="@dimen/text_size"
-                    android:textColor="@color/white"
-                    android:background="@color/transparent"
-                    android:gravity="center|bottom"
-                    android:paddingBottom="5dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentStart="true" />
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_diagono"
-                    android:layout_centerHorizontal="true"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="70dp"
-                android:layout_margin="2dp"
-                android:background="#ff4da6"
-                android:layout_weight="0.5">
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/button20"
-                    android:text="@string/packetlouf"
-                    android:textSize="@dimen/text_size"
-                    android:background="@color/transparent"
-                    android:gravity="center|bottom"
-                    android:textColor="@color/white"
-                    android:paddingBottom="5dp"/>
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_common"
-                    android:layout_centerHorizontal="true"/>
-            </RelativeLayout>
-        </TableRow>
+
 
 
     </TableLayout>
