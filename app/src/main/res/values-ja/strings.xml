@@ -2,9 +2,8 @@
     <string name="app_name">Android Surgery</string>
     <string name="ln">বাং</string>
     <string name="action_settings">Change The Lenguage</string>
-    <string name="dialog_title">Do you want reset you phone?</string>
+    <string name="dialog_title">Read carefully !</string>
     <string name="rest">Rest Phone</string>
-    <string name="dialog_message">Factory reset means its make your phone as like new one</string>
     <string name="imei">IMEI</string>
     <string name="lockstatus">Lock Status</string>
     <string name="infoBattery">Battery and Phone info</string>
@@ -26,6 +25,9 @@
     <string name="packetlouf">Packet Loof test</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
+    //Dialogs
+   <string name="drest">You can remove all data from your Android device by resetting it to factory settings. The code is \n*2767*3855#\nImportant: Performing a factory data reset erases all data — like your apps, photos, and music from your device</string>
+
 
 
 </resources>

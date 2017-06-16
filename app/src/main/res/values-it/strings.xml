@@ -1,12 +1,11 @@
 <resources>
     <string name="app_name">অ্যান্ড্রয়েড সার্জন </string>
     <string name="action_settings">ভাষা পরিবর্তন কুরুন</string>
-    <string name="dialog_title">আপনি কি এই অ্যাকশান কার্যকর করতে চান ?</string>
+    <string name="dialog_title">মনোযোগ সহকারে পুরুন!</string>
     <string name="language">Bangla</string>
     <string name="ok">করুন</string>
     <string name="ln">En</string>
     <string name="cancel">বাতিল করুন</string>
-    <string name="dialog_message">ফ্যাক্টরি রিসেট হল এমন একটি পদ্ধতি যা আপনার সেটকে একবারই নতুন অবস্তায় নিয়ে যায়।</string>
     <string name="rest">রিসেট ফোন</string>
     <string name="imei">IMEIজানতে</string>
     <string name="lockstatus">লক স্ট্যাটাস</string>
@@ -27,4 +26,8 @@
     <string name="touchscreenver">টাচস্ক্রীন  ভার্সন</string>
     <string name="dispaytest">ডিসপে টেস্ট</string>
     <string name="packetlouf">প্যাকেট লুফ টেস্ট </string>
+    //Dialogs
+    <string name="drest">ফ্যাক্টরি সেটিংসে রিসেট করে আপনি আপনার Android  ডিভাইস থেকে সমস্ত ডেটা সরাতে পারেন।
+তার জন্য কোড হল\n *২৭৬৭*৩৮৫৫# \nসতর্কীকরণ :  ফ্যাক্টরি ডেটা রিসেট করার মাধ্যমে ডিভাইস থেকে আপনার সমস্ত অ্যাপ্লিকেশানগুলি, ফটোগুলি ,গান ও ভিডিও গুলো   - মুছে যাবে। তাই রেসেট দেয়ার আগে আপনার গুরুত্ব পূর্ণ  ফাইল, ছবি ,গান কিংবা ভিডিও গুলা ব্যাকআপ রাখুন।</string>
+
 </resources>
