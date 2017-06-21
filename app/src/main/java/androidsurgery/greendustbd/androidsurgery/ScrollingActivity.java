@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.akexorcist.localizationactivity.LocalizationActivity;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.NativeExpressAdView;
 
 import java.io.IOException;
 
@@ -32,6 +34,10 @@ public class ScrollingActivity extends LocalizationActivity  {
         setSupportActionBar(toolbar);
         //customly change app name
         getSupportActionBar().setTitle(R.string.app_name);
+
+        //native add
+        NativeExpressAdView adView = (NativeExpressAdView)findViewById(R.id.adViewn);
+        adView.loadAd(new AdRequest.Builder().build());
 
         //Showing gif
 
