@@ -220,7 +220,7 @@ public class ScrollingActivity extends LocalizationActivity  {
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
                         Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*2767*3855#"));
+                        callIntent.setData(Uri.parse(""));
 
                         //Check the runtime permission including mashmallow
 
@@ -261,7 +261,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.imei));
+        builder.setMessage(getString(R.string.dimei));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -318,7 +318,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dlock));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -368,7 +368,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dbattery));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -418,7 +418,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dfta));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -468,7 +468,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dtouch));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -518,7 +518,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dvibrate));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -568,7 +568,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dhardware));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -618,7 +618,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.ddiagonostic));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -668,7 +668,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.ddump));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -718,7 +718,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dcammera));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -768,7 +768,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dfhard));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -818,7 +818,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dusb));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -868,7 +868,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dgps));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -918,7 +918,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dwifi));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -968,7 +968,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dbluetrooth));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -1018,7 +1018,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dram));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -1068,7 +1068,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dtouchvr));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -1118,7 +1118,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.ddispay));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
@@ -1168,7 +1168,7 @@ public class ScrollingActivity extends LocalizationActivity  {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
         builder.setTitle(getString(R.string.dialog_title));
-        builder.setMessage(getString(R.string.drest));
+        builder.setMessage(getString(R.string.dlouf));
 
         String positiveText = getString(R.string.ok);
         builder.setPositiveButton(positiveText,
