@@ -225,7 +225,7 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
                         callIntent.setData(Uri.parse(""));
 
                         //Check the runtime permission including mashmallow
@@ -332,7 +332,7 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
                         callIntent.setData(Uri.parse("tel:*#7465625#"));
 
                         //Check the runtime permission including mashmallow
@@ -382,8 +382,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#*#4636#*#*"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -432,8 +432,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#*#1111#*#*"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -482,8 +482,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#*#2664#*#*"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -532,8 +532,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#*#0842#*#*"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -582,8 +582,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#12580*369#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -632,8 +632,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#9090#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -682,8 +682,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#9900#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -732,8 +732,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#9900#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -782,8 +782,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#9900#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -832,8 +832,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#9900#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -882,8 +882,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#9900#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -932,8 +932,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#9900#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -982,8 +982,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#9900#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -1032,8 +1032,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#9900#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -1082,8 +1082,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#9900#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -1132,8 +1132,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#9900#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
@@ -1182,8 +1182,8 @@ public class ScrollingActivity extends LocalizationActivity  {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // positive button logic
-                        Intent callIntent = new Intent(Intent.ACTION_CALL);
-                        callIntent.setData(Uri.parse("tel:*#9900#"));
+                        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                        callIntent.setData(Uri.parse("tel:"));
 
                         //Check the runtime permission including mashmallow
 
