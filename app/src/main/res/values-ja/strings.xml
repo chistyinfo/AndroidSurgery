@@ -23,7 +23,7 @@
     <string name="touchscreenver">Touch Screen Version</string>
     <string name="dispaytest">Display Test</string>
     <string name="packetlouf">Packet Loof test</string>
-    <string name="ok">OK</string>
+    <string name="ok">Dial Screen</string>
     <string name="cancel">Cancel</string>
     //Dialogs
    <string name="drest">You can remove all data from your Android device by resetting it to factory settings. The code is \n*2767*3855#\nImportant: Performing a factory data reset erases all data — like your apps, photos, and music from your device</string>
