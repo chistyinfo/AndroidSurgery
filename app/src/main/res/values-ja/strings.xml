@@ -1,7 +1,9 @@
 <resources>
+    <!--Admob for testing-->
+    <string name="native_Ad">ca-app-pub-2233261441949271~4784242345</string>
+    <string name="native_TEST">ca-app-pub-3940256099942544/6300978111</string>
     <string name="app_name">Android Surgery</string>
     <string name="ln">বাং</string>
-    <string name="action_settings">Change The Lenguage</string>
     <string name="dialog_title">Read carefully !</string>
     <string name="rest">Rest Phone</string>
     <string name="imei">IMEI</string>

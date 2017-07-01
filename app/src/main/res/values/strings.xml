@@ -1,7 +1,60 @@
 <resources>
     <string name="app_name">Android Surgery</string>
     <!--Admob for testing-->
-    <string name="banner_TEST">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="native_Ad">ca-app-pub-2233261441949271~4784242345</string>
     <string name="native_TEST">ca-app-pub-3940256099942544/6300978111</string>
+
+
+
+        <string name="ln">বাং</string>
+        <string name="dialog_title">Read carefully !</string>
+        <string name="rest">Rest Phone</string>
+        <string name="imei">IMEI</string>
+        <string name="lockstatus">Lock Status</string>
+        <string name="infoBattery">Battery and Phone info</string>
+        <string name="fta">Version of FTA</string>
+        <string name="touchskin">Touch Skin Code</string>
+        <string name="vibratbacklight">Vibrate &amp; backlight test</string>
+        <string name="hardwaresoftware">Hardware and Software Details</string>
+        <string name="diagonastic">Diagonostic Config</string>
+        <string name="dumpmode">Dump System Mode</string>
+        <string name="camerainfo">Camera Info</string>
+        <string name="factoryhardreset">Factory hard Reset</string>
+        <string name="datacable">Data Cable Control</string>
+        <string name="gpstest">GPS test</string>
+        <string name="wifimac">WiFi mac Address</string>
+        <string name="bluetrooth">Bluetrooth device info</string>
+        <string name="ramversion">Ram Version</string>
+        <string name="touchscreenver">Touch Screen Version</string>
+        <string name="dispaytest">Display Test</string>
+        <string name="packetlouf">Packet Loof test</string>
+        <string name="ok">Dial Screen</string>
+        <string name="cancel">Cancel</string>
+        //Dialogs
+        <string name="drest">You can remove all data from your Android device by resetting it to factory settings. The code is \n*2767*3855#\nImportant: Performing a factory data reset erases all data — like your apps, photos, and music from your device</string>
+        <string name="dimei">Every mobile phone, GSM modem or device with a built-in phone / modem has a unique 15 digit IMEI number. The code is \n *#06# \nBased on this number, you can check some information about the device, eg brand or model.</string>
+        <string name="dlock">A locked mobile phone is one that has been restricted by software so that it can only be used with a single network or carrier.The code is \n *#7465625#\n
+Locked mobile phones are usually GSM phones that use a SIM card - hence the use of the term SIM lock. The code is \n *#*#4636#*#*\nThe reason for the lock is because mobile phones are usually heavily subsidized and carriers want to discourage people switching networks or shipping phones to other countries.
+</string>
+        <string name="dbattery">Display information about Phone, Battery and Usage statistics. The code is \n *#*#1111#*#*\n</string>
+        <string name="dfta">Fault Tree Analysis is one of the most widely used methods in system reliability and failure probability analysis.The code is \n *#*#2664#*#*\n</string>
+        <string name="dtouch">Have you been having problems with the touch screen on your smartphone? The code is \n \nLooking for a quick way to check for dead spots, or verify that some areas of the screen are truly unresponsive? Here is a cool trick that should allow you to check your entire touch screen in a matter of seconds.</string>
+        <string name="dvibrate">This code is used for Backlight/vibration test. The code is \n *#*#0842#*#*\n... You can run various tests and change settings in the service mode.</string>
+        <string name="dhardware">For checking software and hardware information.The code is \n *#12580*369#\n</string>
+        <string name="ddiagonostic">Diagnostic Configuration is the inner working configuration of Android Smartphone.The code is \n *#9090#\n</string>
+        <string name="ddump">System Dump is the dump of everything on the system folder of your phone.The code is \n *#9900#\n It includes apps, wallpapers, ringtones and many more unknown files.</string>
+        <string name="dcammera">Detailed Camera information of your android smartphone.The code is \n*#*#34971539#*#* \n</string>
+        <string name="dfhard">A factory reset, also known as master reset, is a software restore of an electronic device to its original system The code is \n *#*#7780#*#*\nstate by erasing all of the information stored on the device in an attempt to restore the device software to its original manufacturer settings.</string>
+        <string name="dusb">It is the feature of phone to manage USB operations. It controls the connectivity of phone with PCs.The code is \n *#872564#\n</string>
+        <string name="dgps">Check to GPS reception in your area, update AGPS data for faster fix times all this and other GPS and Sensor data read from your phone.The code is \n *#*#1472365#*#*\n</string>
+        <string name="dwifi">To locate the MAC Address of your Android phone or Android tablet, The code is \n *#*#232338#*#*\n</string>
+        <string name="dbluetrooth">Bluetooth test. The code is \n *#*#232331#*#*\n</string>
+        <string name="dram">To see or display device’s Bluetooth address.The code is \n*#*#232337#*# \n</string>
+        <string name="dtouchvr">To show RAM version.The code is \n *#*#3264#*#\n</string>
+        <string name="ddispay">For LCD display test.The code is \n*#*#0*#*#* \n</string>
+        <string name="dlouf">To perform a packet loop-back test.The code is \n *#*#0283#*#*#\n</string>
+
+
+
 
 </resources>

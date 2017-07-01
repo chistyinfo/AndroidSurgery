@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         ads:adSize="590x110"
-        ads:adUnitId="@string/native_TEST"
+        ads:adUnitId="@string/native_Ad"
         android:layout_weight="0.97">
     </com.google.android.gms.ads.NativeExpressAdView>
 
