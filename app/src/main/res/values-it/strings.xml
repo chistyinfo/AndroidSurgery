@@ -1,8 +1,9 @@
 <resources>
     <!--Admob for testing-->
-    <string name="native_Ad">ca-app-pub-2233261441949271~4784242345</string>
+    <string name="native_Ad">ca-app-pub-2233261441949271/6260975547</string>
     <string name="native_TEST">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="app_name">অ্যান্ড্রয়েড সার্জন </string>
+    <string name="facebook_app_id">322650934857067</string>
+    <string name="app_name">অ্যান্ড্রয়েড সার্জারি </string>
     <string name="dialog_title">মনোযোগ সহকারে পড়ুন!</string>
     <string name="ok">করুন</string>
     <string name="ln">En</string>

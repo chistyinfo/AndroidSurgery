@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Android Surgery</string>
     <!--Admob for testing-->
-    <string name="native_Ad">ca-app-pub-2233261441949271~4784242345</string>
+    <string name="native_Ad">ca-app-pub-2233261441949271/6260975547</string>
     <string name="native_TEST">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="facebook_app_id">322650934857067</string>
 
 
 

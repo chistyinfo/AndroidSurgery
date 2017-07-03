@@ -52,6 +52,7 @@
     <include layout="@layout/content_scrolling" />
 
 
+
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,16 +88,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:paddingBottom="1dp"
         android:background="@color/transparent">
-        <com.google.android.gms.ads.NativeExpressAdView
-            android:id="@+id/adViewn"
-            android:layout_width="match_parent"
+        <!--<com.google.android.gms.ads.NativeExpressAdView-->
+            <!--android:id="@+id/adViewn"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--ads:adSize="320x120"-->
+            <!--ads:adUnitId="@string/native_Ad">-->
+        <!--</com.google.android.gms.ads.NativeExpressAdView>-->
+
+        <RelativeLayout
+            android:id="@+id/adViewContainer"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            ads:adSize="350x80"
-            ads:adUnitId="@string/native_Ad"
-            android:layout_weight="0.97">
-        </com.google.android.gms.ads.NativeExpressAdView>
+            />
+
 
 
     </FrameLayout>
