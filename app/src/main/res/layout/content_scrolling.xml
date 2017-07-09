@@ -28,22 +28,19 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@mipmap/ic_launcher"
                     android:id="@+id/button1"
                     android:text="@string/rest"
-                    android:layout_marginTop="2dp"
                     android:background="@color/transparent"
                     android:textSize="@dimen/text_size"
                     android:textColor="@color/white"
                     android:gravity="center|bottom"
-                    android:singleLine="false"
-                    android:paddingBottom="5dp"/>
+                    android:paddingBottom="5dp" />
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/ic_reset" />
+                    app:srcCompat="@drawable/ic_reset" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dp"
@@ -60,13 +57,12 @@
                     android:textSize="@dimen/text_size"
                     android:textColor="@color/black"
                     android:gravity="center|bottom"
-                    android:singleLine="false"
                     android:paddingBottom="5dp"/>
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_common"
+                    app:srcCompat="@drawable/ic_common"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
@@ -95,7 +91,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_locked"
+                    app:srcCompat="@drawable/ic_locked"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
@@ -120,7 +116,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_battery"
+                    app:srcCompat="@drawable/ic_battery"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
@@ -149,7 +145,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_common"
+                    app:srcCompat="@drawable/ic_common"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
@@ -172,7 +168,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_touchscreen"
+                    app:srcCompat="@drawable/ic_touchscreen"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
@@ -201,7 +197,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_wifi"
+                    app:srcCompat="@drawable/ic_wifi"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
@@ -225,7 +221,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_hrsoft"
+                    app:srcCompat="@drawable/ic_hrsoft"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
@@ -256,7 +252,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_diagono"
+                    app:srcCompat="@drawable/ic_diagono"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
@@ -279,7 +275,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_common"
+                    app:srcCompat="@drawable/ic_common"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
@@ -310,7 +306,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_camera"
+                    app:srcCompat="@drawable/ic_camera"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
@@ -333,7 +329,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_reset"
+                    app:srcCompat="@drawable/ic_reset"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
@@ -364,7 +360,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_usb_cable"
+                    app:srcCompat="@drawable/ic_usb_cable"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
@@ -387,7 +383,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_gps"
+                    app:srcCompat="@drawable/ic_gps"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
@@ -418,7 +414,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_wifi"
+                    app:srcCompat="@drawable/ic_wifi"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
@@ -441,7 +437,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_bluetooth"
+                    app:srcCompat="@drawable/ic_bluetooth"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
         </TableRow>
@@ -472,7 +468,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="2dp"
-                android:src="@drawable/ic_diagono"
+                app:srcCompat="@drawable/ic_diagono"
                 android:layout_centerHorizontal="true"/>
         </RelativeLayout>
         <RelativeLayout
@@ -497,7 +493,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="2dp"
-                android:src="@drawable/ic_touchscreen"
+                app:srcCompat="@drawable/ic_touchscreen"
                 android:layout_centerHorizontal="true"/>
         </RelativeLayout>
     </TableRow>
@@ -516,7 +512,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/button19"
-                    android:text="@string/ramversion"
+                    android:text="@string/dispaytest"
                     android:textSize="@dimen/text_size"
                     android:textColor="@color/white"
                     android:background="@color/transparent"
@@ -528,7 +524,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_diagono"
+                    app:srcCompat="@drawable/ic_reset"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
             <RelativeLayout
@@ -541,7 +537,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/button20"
-                    android:text="@string/touchscreenver"
+                    android:text="@string/packetlouf"
                     android:textSize="@dimen/text_size"
                     android:background="@color/transparent"
                     android:textColor="@color/black"
@@ -551,10 +547,14 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_touchscreen"
+                    app:srcCompat="@drawable/ic_common"
                     android:layout_centerHorizontal="true"/>
             </RelativeLayout>
+
         </TableRow>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
 
 
 

@@ -90,20 +90,20 @@
         android:layout_gravity="bottom"
         android:paddingBottom="1dp"
         android:background="@color/transparent">
-        <!--<com.google.android.gms.ads.NativeExpressAdView-->
-            <!--android:id="@+id/adViewn"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="bottom"-->
-            <!--ads:adSize="320x120"-->
-            <!--ads:adUnitId="@string/native_Ad">-->
-        <!--</com.google.android.gms.ads.NativeExpressAdView>-->
-
-        <RelativeLayout
-            android:id="@+id/adViewContainer"
-            android:layout_width="wrap_content"
+        <com.google.android.gms.ads.NativeExpressAdView
+            android:id="@+id/adViewn"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:layout_gravity="bottom"
+            ads:adSize="320x100"
+            ads:adUnitId="@string/native_Ad">
+        </com.google.android.gms.ads.NativeExpressAdView>
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/adViewContainer"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
 
 
 

@@ -12,13 +12,12 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.akexorcist.localizationactivity.LocalizationActivity;
 import com.crashlytics.android.Crashlytics;
-import com.facebook.ads.AdSize;
-import com.facebook.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.NativeExpressAdView;
 
 import java.io.IOException;
 
@@ -29,7 +28,6 @@ public class ScrollingActivity extends LocalizationActivity  {
     private Button button1, button2,button3,button4,button5,button6,button7,button8,button9,button10,
     button11,button12,button13,button14,button15,button16,button17,button18,button19,button20;
     private int _clicks = 0;
-    private AdView adView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,8 +40,8 @@ public class ScrollingActivity extends LocalizationActivity  {
         getSupportActionBar().setTitle(R.string.app_name);
 
         //native add
-//        NativeExpressAdView adView = (NativeExpressAdView)findViewById(R.id.adViewn);
-//        adView.loadAd(new AdRequest.Builder().build());
+        NativeExpressAdView adView = (NativeExpressAdView)findViewById(R.id.adViewn);
+        adView.loadAd(new AdRequest.Builder().build());
 
         //Showing gif
 
@@ -54,11 +52,11 @@ public class ScrollingActivity extends LocalizationActivity  {
         }
 
         //Facebook Ad
-        RelativeLayout adViewContainer = (RelativeLayout) findViewById(R.id.adViewContainer);
-
-        adView = new AdView(this, "342721506148604_343048569449231", AdSize.BANNER_320_50);
-        adViewContainer.addView(adView);
-        adView.loadAd();
+//        RelativeLayout adViewContainer = (RelativeLayout) findViewById(R.id.adViewContainer);
+//
+//        adView = new AdView(this, "342721506148604_343048569449231", AdSize.BANNER_320_50);
+//        adViewContainer.addView(adView);
+//        adView.loadAd();
 
 
         //Buttons
@@ -1252,7 +1250,6 @@ public class ScrollingActivity extends LocalizationActivity  {
 
     }
 
-       
 
     }
 
