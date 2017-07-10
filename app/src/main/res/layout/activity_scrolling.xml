@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     tools:context="androidsurgery.greendustbd.androidsurgery.ScrollingActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             ads:adSize="320x100"
-            ads:adUnitId="@string/native_Ad">
+            ads:adUnitId="@string/native_TEST">
         </com.google.android.gms.ads.NativeExpressAdView>
 
         <!--<RelativeLayout-->
@@ -108,8 +108,6 @@
 
 
     </FrameLayout>
-
-
 
 
 

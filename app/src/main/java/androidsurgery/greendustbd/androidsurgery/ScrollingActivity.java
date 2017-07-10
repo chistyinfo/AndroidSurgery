@@ -25,8 +25,8 @@ import io.fabric.sdk.android.Fabric;
 import pl.droidsonroids.gif.GifDrawable;
 
 public class ScrollingActivity extends LocalizationActivity  {
-    private Button button1, button2,button3,button4,button5,button6,button7,button8,button9,button10,
-    button11,button12,button13,button14,button15,button16,button17,button18,button19,button20;
+    private Button button1, button2, button3, button4, button5, button6, button7, button8, button9, button10,
+            button11, button12, button13, button14, button15, button16, button17, button18, button19, button20;
     private int _clicks = 0;
 
     @Override
@@ -40,13 +40,13 @@ public class ScrollingActivity extends LocalizationActivity  {
         getSupportActionBar().setTitle(R.string.app_name);
 
         //native add
-        NativeExpressAdView adView = (NativeExpressAdView)findViewById(R.id.adViewn);
+        NativeExpressAdView adView = (NativeExpressAdView) findViewById(R.id.adViewn);
         adView.loadAd(new AdRequest.Builder().build());
 
         //Showing gif
 
         try {
-            GifDrawable gifFromResource = new GifDrawable( getResources(), R.drawable.jiny);
+            GifDrawable gifFromResource = new GifDrawable(getResources(), R.drawable.jiny);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -202,7 +202,6 @@ public class ScrollingActivity extends LocalizationActivity  {
         });
 
 
-
 //        fs = (Button) findViewById(R.id.transition_scene_layoutid_cache);
 
         //Floating buttons
@@ -211,18 +210,17 @@ public class ScrollingActivity extends LocalizationActivity  {
             @Override
             public void onClick(View view) {
                 int count = ++_clicks;
-                if(count == 1)
+                if (count == 1)
                     setLanguage("it");
-                    if(count == 2)
-                        setLanguage("ja");
-                if(count == 3)
+                if (count == 2)
+                    setLanguage("ja");
+                if (count == 3)
                     setLanguage("it");
-               }
+            }
         });
 
 
     }
-
 
 
     //Dialogs
@@ -270,11 +268,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog2() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -296,7 +294,7 @@ public class ScrollingActivity extends LocalizationActivity  {
 
                         Intent callIntent = new Intent(Intent.ACTION_DIAL);
                         String encodedStar = Uri.encode("#");
-                        String imei = "*"+encodedStar +"06"+encodedStar;
+                        String imei = "*" + encodedStar + "06" + encodedStar;
 
                         if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                             // TODO: Consider calling
@@ -327,11 +325,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog3() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -377,11 +375,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog4() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -427,11 +425,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog5() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -477,11 +475,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog6() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -527,11 +525,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog7() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -577,11 +575,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog8() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -627,11 +625,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog9() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -677,11 +675,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog10() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -727,11 +725,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog11() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -777,11 +775,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog12() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -827,11 +825,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog13() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -877,11 +875,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog14() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -927,11 +925,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog15() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -977,11 +975,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog16() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -1027,11 +1025,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog17() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -1077,11 +1075,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog18() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -1127,11 +1125,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog19() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -1177,11 +1175,11 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
     }
+
     private void customDialog20() {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(this, R.style.MyDialogTheme);
@@ -1227,7 +1225,6 @@ public class ScrollingActivity extends LocalizationActivity  {
                 });
 
 
-
         AlertDialog dialog = builder.create();
         // display dialog
         dialog.show();
@@ -1235,6 +1232,7 @@ public class ScrollingActivity extends LocalizationActivity  {
 
     //click twice to exit
     boolean doubleBackToExitPressedOnce = false;
+
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
@@ -1251,7 +1249,7 @@ public class ScrollingActivity extends LocalizationActivity  {
     }
 
 
-    }
+}
 
 //    public void onClick(View v) {
 //        int id = v.getId();
