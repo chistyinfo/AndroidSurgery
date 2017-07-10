@@ -92,10 +92,10 @@
         android:background="@color/transparent">
         <com.google.android.gms.ads.NativeExpressAdView
             android:id="@+id/adViewn"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            ads:adSize="320x100"
+            android:layout_gravity="center"
+            ads:adSize="340x100"
             ads:adUnitId="@string/native_TEST">
         </com.google.android.gms.ads.NativeExpressAdView>
 
