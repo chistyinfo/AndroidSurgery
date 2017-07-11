@@ -99,11 +99,6 @@
             ads:adUnitId="@string/native_TEST">
         </com.google.android.gms.ads.NativeExpressAdView>
 
-        <!--<RelativeLayout-->
-            <!--android:id="@+id/adViewContainer"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--/>-->
 
 
 
