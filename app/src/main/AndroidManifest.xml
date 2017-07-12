@@ -27,7 +27,9 @@
             android:value="e18d98679e28dc24adc1fa3845e20080a87c567f" />
 
         <activity android:name=".Tips" />
-        <activity android:name=".SingleTipsActivity"></activity>
+        <activity android:name=".SingleTipsActivity" />
+        <activity android:name=".Teach" />
+        <activity android:name=".WebView"></activity>
     </application>
 
 </manifest>

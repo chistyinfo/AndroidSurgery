@@ -1283,9 +1283,20 @@ public class MainActivity extends LocalizationActivity implements NavigationView
             startActivity(i);
 
         } else if (id == R.id.Tech_b) {
+            Intent i = new Intent(MainActivity.this, Teach.class);
+            startActivity(i);
 
         } else if (id == R.id.Question_b) {
 
+        } else if (id == R.id.web_arina) {
+            Intent intent = new Intent(MainActivity.this, WebView.class);
+            intent.putExtra("GSM", "http://www.dailystockbangladesh.com");
+            startActivity(intent);
+
+        } else if (id == R.id.web_android) {
+            Intent intent = new Intent(MainActivity.this, WebView.class);
+            intent.putExtra("AND", "http://www.androidhive.info/");
+            startActivity(intent);
 
         } else if (id == R.id.share_b) {
 

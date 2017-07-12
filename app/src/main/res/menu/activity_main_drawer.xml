@@ -17,6 +17,16 @@
 
     </group>
 
+    <item android:title="Websites">
+        <menu>
+            <item
+                android:id="@+id/web_arina"
+                android:title="GSM Areina" />
+            <item
+                android:id="@+id/web_android"
+                android:title="Android" />
+        </menu>
+    </item>
     <item android:title="Others">
         <menu>
             <item
