@@ -1,6 +1,7 @@
 <resources>
     <!--Admob for testing-->
     <string name="native_Ad">ca-app-pub-2233261441949271/6260975547</string>
+    <string name="app_title">An app for your android solution</string>
     <string name="native_TEST">ca-app-pub-3940256099942544/6300978111</string>
     <string name="facebook_app_id">322650934857067</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

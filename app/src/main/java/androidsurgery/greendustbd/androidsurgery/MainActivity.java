@@ -6,14 +6,18 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.ColorRes;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -1277,6 +1281,18 @@ public class MainActivity extends LocalizationActivity implements NavigationView
         }
     }
 
+    private void setTextColorForMenuItem(MenuItem menuItem, @ColorRes int color) {
+        SpannableString spanString = new SpannableString(menuItem.getTitle().toString());
+        spanString.setSpan(new ForegroundColorSpan(ContextCompat.getColor(this, color)), 0, spanString.length(), 0);
+        menuItem.setTitle(spanString);
+    }
+
+
+    private void resetAllMenuItemsTextColor(NavigationView navigationView) {
+        for (int i = 0; i < navigationView.getMenu().size(); i++)
+            setTextColorForMenuItem(navigationView.getMenu().getItem(i), R.color.colorAccent);
+    }
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -1289,7 +1305,6 @@ public class MainActivity extends LocalizationActivity implements NavigationView
             Intent i = new Intent(MainActivity.this, Teach.class);
             startActivity(i);
 
-        } else if (id == R.id.Question_b) {
 
         } else if (id == R.id.web_arina) {
             Intent intent = new Intent(MainActivity.this, WebView.class);

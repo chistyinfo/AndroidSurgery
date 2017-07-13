@@ -5,15 +5,12 @@
 
         <item
             android:id="@+id/Tips_b"
-
+            android:icon="@drawable/ic_tech"
             android:title="Tips" />
         <item
             android:id="@+id/Tech_b"
-
+            android:icon="@drawable/ic_icl_tip"
             android:title="Technology News" />
-        <item
-            android:id="@+id/Question_b"
-            android:title="Ask your Question" />
 
     </group>
 
@@ -21,9 +18,11 @@
         <menu>
             <item
                 android:id="@+id/web_arina"
+                android:icon="@drawable/ic_worldwide"
                 android:title="GSM Areina" />
             <item
                 android:id="@+id/web_android"
+                android:icon="@drawable/ic_worldwide"
                 android:title="Android" />
         </menu>
     </item>
@@ -31,9 +30,11 @@
         <menu>
             <item
                 android:id="@+id/share_b"
+                android:icon="@drawable/ic_social_share_symbol"
                 android:title="Share" />
             <item
                 android:id="@+id/rate_b"
+                android:icon="@drawable/ic_star"
                 android:title="Rate us" />
         </menu>
     </item>

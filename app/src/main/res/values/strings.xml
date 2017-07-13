@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Android Surgery</string>
+    <string name="app_title">An app for your android solution</string>
     <!--Admob for testing-->
     <string name="native_Ad">ca-app-pub-2233261441949271/6260975547</string>
     <string name="native_TEST">ca-app-pub-3940256099942544/6300978111</string>

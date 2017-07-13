@@ -32,7 +32,6 @@
         <item name="color">@android:color/black</item>
     </style>
 
-
     // Custom Dialog
 
     <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
