@@ -33,6 +33,7 @@ public class MainActivity extends LocalizationActivity implements NavigationView
             button11, button12, button13, button14, button15, button16, button17, button18, button19, button20;
     private Button tips,techno;
     private int _clicks = 0;
+    private Intent rateApp;
 
 
     @Override
@@ -44,6 +45,8 @@ public class MainActivity extends LocalizationActivity implements NavigationView
         setSupportActionBar(toolbar);
         //customly change app name
         getSupportActionBar().setTitle(R.string.app_name);
+
+        rateApp = new Intent(Intent.ACTION_VIEW);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -1299,9 +1302,16 @@ public class MainActivity extends LocalizationActivity implements NavigationView
             startActivity(intent);
 
         } else if (id == R.id.share_b) {
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_SEND);
+            intent.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=androidsurgery.greendustbd.androidsurgery");
+            intent.setType("text/plain");
+            startActivity(Intent.createChooser(intent,"Share it!"));
+
 
         } else if (id == R.id.rate_b) {
-
+            rateApp.setData(Uri.parse("https://play.google.com/store/apps/details?id=androidsurgery.greendustbd.androidsurgery"));
+            startActivity(rateApp);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
