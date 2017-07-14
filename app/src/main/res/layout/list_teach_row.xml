@@ -22,8 +22,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
@@ -52,7 +52,7 @@
 
             <!-- Drama Title -->
 
-            <androidsurgery.greendustbd.androidsurgery.font.RobotoTextView
+            <androidsurgery.greendustbd.androidsurgery.font.FontelloTextView
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,8 +62,8 @@
                 android:layout_gravity="center"
                 apps:typeface="robotoBlack" />
 
-            <androidsurgery.greendustbd.androidsurgery.font.RobotoTextView
-                android:id="@+id/publisher"
+            <androidsurgery.greendustbd.androidsurgery.font.FontelloTextView
+                android:id="@+id/summary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -73,17 +73,6 @@
                 android:elevation="5dp"
                 apps:typeface="robotoBlack" />
 
-
-            <androidsurgery.greendustbd.androidsurgery.font.RobotoTextView
-                android:id="@+id/writer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:layout_below="@id/title"
-                android:textSize="14sp"
-                android:elevation="5dp"
-                apps:typeface="robotoBlack" />
 
 
 

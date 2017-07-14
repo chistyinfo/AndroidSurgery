@@ -35,12 +35,12 @@ public class Tips extends AppCompatActivity {
     // Log tag
     private static final String TAG = Tips.class.getSimpleName();
     // Movies json url
-    private static final String url = "https://greendustbdplus.000webhostapp.com/Leasure/books.json";
+    private static final String url = "https://greendustbdplus.000webhostapp.com/androidsurgery/tips.json";
     private List<androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips> bookList = new ArrayList<androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips>();
-    private ListView blistView;
+    private ListView tilistView;
     String[] DetailsArray;
     private Context con;
-    private CustomTipsListAdapter badapter;
+    private CustomTipsListAdapter tiadapter;
     private WebView webView;
 
     @Override
@@ -48,10 +48,10 @@ public class Tips extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips);
         con = this;
-        blistView = (ListView) findViewById(R.id.book_list);
-        badapter = new CustomTipsListAdapter(this, bookList);
-        blistView.setAdapter(badapter);
-        blistView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        tilistView = (ListView) findViewById(R.id.tips_list);
+        tiadapter = new CustomTipsListAdapter(this, bookList);
+        tilistView.setAdapter(tiadapter);
+        tilistView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
                                              @Override
                                              public void onItemClick(AdapterView<?> parent, View view,
@@ -96,8 +96,8 @@ public class Tips extends AppCompatActivity {
                                     androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips book = new androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips();
                                     book.setTitle(obj.getString("title"));
                                     book.setThumbnailUrl(obj.getString("image"));
-                                    book.setPublisher(obj.getString("publisher"));
-                                    book.setWriter(obj.getString("writer"));
+                                    book.setSummary(obj.getString("summary"));
+//                                    book.setWriter(obj.getString("writer"));
                                     //url capturing form server
                                     DetailsArray[i] = obj.getString("details");
 
@@ -112,7 +112,7 @@ public class Tips extends AppCompatActivity {
 
                             // notifying list adapter about data changes
                             // so that it renders the list view with updated data
-                            badapter.notifyDataSetChanged();
+                            tiadapter.notifyDataSetChanged();
 //
                         }
                     }, new Response.ErrorListener() {

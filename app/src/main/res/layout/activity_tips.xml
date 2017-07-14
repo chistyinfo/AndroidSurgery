@@ -12,7 +12,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/material_skyblue_500"
+    android:background="@color/colorPrimaryDark"
     tools:context="androidsurgery.greendustbd.androidsurgery.Tips">
 
     <LinearLayout
@@ -23,11 +23,11 @@
 
 
         <ListView
-            android:id="@+id/book_list"
+            android:id="@+id/tips_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="6dp"
-            android:background="@color/material_skyblue_600" />
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimaryDark" />
 
 
 
@@ -38,7 +38,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:layout_marginTop="2dp"
-        android:background="@color/material_skyblue_600"
+        android:background="@color/colorPrimaryDark"
         android:orientation="vertical">
 
         <!--<com.google.android.gms.ads.NativeExpressAdView-->

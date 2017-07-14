@@ -52,18 +52,19 @@
 
             <!-- Drama Title -->
 
-            <androidsurgery.greendustbd.androidsurgery.font.RobotoTextView
+            <androidsurgery.greendustbd.androidsurgery.font.FontelloTextView
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/material_green_500"
                 android:textSize="20sp"
                 android:elevation="5dp"
+                android:layout_marginTop="16dp"
                 android:layout_gravity="center"
                 apps:typeface="robotoBlack" />
 
-            <androidsurgery.greendustbd.androidsurgery.font.RobotoTextView
-                android:id="@+id/publisher"
+            <androidsurgery.greendustbd.androidsurgery.font.FontelloTextView
+                android:id="@+id/summary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -72,19 +73,6 @@
                 android:layout_below="@+id/title"
                 android:elevation="5dp"
                 apps:typeface="robotoBlack" />
-
-
-            <androidsurgery.greendustbd.androidsurgery.font.RobotoTextView
-                android:id="@+id/writer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:layout_below="@id/title"
-                android:textSize="14sp"
-                android:elevation="5dp"
-                apps:typeface="robotoBlack" />
-
 
 
 

@@ -52,15 +52,15 @@ public class CustomTeachInfoListAdapter extends BaseAdapter {
 			inflater = (LayoutInflater) activity
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		if (convertView == null)
-			convertView = inflater.inflate(R.layout.list_book_row, null);
+			convertView = inflater.inflate(R.layout.list_tips_row, null);
 
 		if (imageLoader == null)
 			imageLoader = AppController.getInstance().getImageLoader();
 		NetworkImageView thumbNail = (NetworkImageView) convertView
 				.findViewById(R.id.thumbnail);
 		TextView title = (TextView) convertView.findViewById(R.id.title);
-		TextView publisher = (TextView) convertView.findViewById(R.id.publisher);
-		TextView writer = (TextView) convertView.findViewById(R.id.writer);
+		TextView summary = (TextView) convertView.findViewById(R.id.summary);
+
 
 
 		// getting movie data for the row
@@ -72,11 +72,10 @@ public class CustomTeachInfoListAdapter extends BaseAdapter {
 		// Title/Name
 		title.setText(m.getTitle());
 		
-		// Publisher
-		publisher.setText("Publisher: " + String.valueOf(m.getPublisher()));
+		// summary
+		summary.setText("summary: " + String.valueOf(m.getSummary()));
 
-		// Writer
-		writer.setText("Writer: " + String.valueOf(m.getWriter()));
+
 
 
 

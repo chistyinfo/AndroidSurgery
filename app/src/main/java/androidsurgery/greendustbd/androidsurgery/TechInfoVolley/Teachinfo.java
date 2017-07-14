@@ -2,18 +2,17 @@ package androidsurgery.greendustbd.androidsurgery.TechInfoVolley;
 
 public class Teachinfo {
 	private String title,thumbnailUrl;
-	private String publisher;
-	private String writer;
-
+	private String summary;
+	
 	public Teachinfo() {
 	}
 
-	public Teachinfo(String name, String thumbnailUrl, String publisher,
-                     String writer) {
+	public Teachinfo(String name, String thumbnailUrl, String summary
+                     ) {
 		this.title = name;
 		this.thumbnailUrl = thumbnailUrl;
-		this.publisher = publisher;
-		this.writer = writer;
+		this.summary = summary;
+
 	}
 
 	public String getTitle() {
@@ -34,20 +33,14 @@ public class Teachinfo {
 	}
 
 
-	public String getPublisher() {
-		return publisher;
+	public String getSummary() {
+		return summary;
 	}
 
-	public void setPublisher(String publisher) {
-		this.publisher = publisher;
+	public void setSummary(String summary) {
+		this.summary = summary;
 	}
 
-	public String getWriter() {
-		return writer;
-	}
 
-	public void setWriter(String writer) {
-		this.writer = writer;
-	}
 
 }

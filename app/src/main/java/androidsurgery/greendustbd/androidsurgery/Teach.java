@@ -35,12 +35,12 @@ public class Teach extends AppCompatActivity {
     // Log tag
     private static final String TAG = Tips.class.getSimpleName();
     // Movies json url
-    private static final String url = "https://greendustbdplus.000webhostapp.com/Leasure/books.json";
-    private List<androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips> bookList = new ArrayList<androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips>();
-    private ListView blistView;
+    private static final String url = "https://greendustbdplus.000webhostapp.com/androidsurgery/teach.json";
+    private List<androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips> teachList = new ArrayList<androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips>();
+    private ListView tlistView;
     String[] DetailsArray;
     private Context con;
-    private CustomTipsListAdapter badapter;
+    private CustomTipsListAdapter tadapter;
     private WebView webView;
 
     @Override
@@ -48,10 +48,10 @@ public class Teach extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teach);
         con = this;
-        blistView = (ListView) findViewById(R.id.book_list);
-        badapter = new CustomTipsListAdapter(this, bookList);
-        blistView.setAdapter(badapter);
-        blistView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        tlistView = (ListView) findViewById(R.id.teach_list);
+        tadapter = new CustomTipsListAdapter(this, teachList);
+        tlistView.setAdapter(tadapter);
+        tlistView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
                                              @Override
                                              public void onItemClick(AdapterView<?> parent, View view,
@@ -96,13 +96,12 @@ public class Teach extends AppCompatActivity {
                                     androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips book = new androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips();
                                     book.setTitle(obj.getString("title"));
                                     book.setThumbnailUrl(obj.getString("image"));
-                                    book.setPublisher(obj.getString("publisher"));
-                                    book.setWriter(obj.getString("writer"));
+                                    book.setSummary(obj.getString("summary"));
                                     //url capturing form server
                                     DetailsArray[i] = obj.getString("details");
 
                                     // adding movie to movies array
-                                    bookList.add(book);
+                                    teachList.add(book);
 
                                 } catch (JSONException e) {
                                     e.printStackTrace();
@@ -112,7 +111,7 @@ public class Teach extends AppCompatActivity {
 
                             // notifying list adapter about data changes
                             // so that it renders the list view with updated data
-                            badapter.notifyDataSetChanged();
+                            tadapter.notifyDataSetChanged();
 //
                         }
                     }, new Response.ErrorListener() {
