@@ -26,7 +26,7 @@
             android:id="@+id/tips_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="1dp"
             android:background="@color/colorPrimaryDark" />
 
 
@@ -41,16 +41,16 @@
         android:background="@color/colorPrimaryDark"
         android:orientation="vertical">
 
-        <!--<com.google.android.gms.ads.NativeExpressAdView-->
-            <!--android:id="@+id/adViewb"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:layout_alignParentBottom="true"-->
-            <!--android:layout_gravity="center"-->
-            <!--ads:adSize="340x80"-->
-            <!--ads:adUnitId="@string/native_ad">-->
-        <!--</com.google.android.gms.ads.NativeExpressAdView>-->
+        <com.google.android.gms.ads.NativeExpressAdView
+            android:id="@+id/adViewti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            ads:adSize="340x80"
+            ads:adUnitId="@string/Tips_ad">
+        </com.google.android.gms.ads.NativeExpressAdView>
 
 
     </LinearLayout>

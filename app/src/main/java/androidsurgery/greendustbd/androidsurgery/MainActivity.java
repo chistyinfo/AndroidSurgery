@@ -6,21 +6,18 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.ColorRes;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
-import android.text.SpannableString;
-import android.text.style.ForegroundColorSpan;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.akexorcist.localizationactivity.LocalizationActivity;
 import com.crashlytics.android.Crashlytics;
@@ -32,16 +29,16 @@ import java.io.IOException;
 import io.fabric.sdk.android.Fabric;
 import pl.droidsonroids.gif.GifDrawable;
 
-public class MainActivity extends LocalizationActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends LocalizationActivity implements NavigationView.OnNavigationItemSelectedListener{
     private Button button1, button2, button3, button4, button5, button6, button7, button8, button9, button10,
             button11, button12, button13, button14, button15, button16, button17, button18, button19, button20;
-    private Button tips,techno;
+    private Button tips, techno;
     private int _clicks = 0;
     private Intent rateApp;
 
 
     @Override
-   public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Fabric.with(this, new Crashlytics());
@@ -224,9 +221,9 @@ public class MainActivity extends LocalizationActivity implements NavigationView
         });
 
 
-//        fs = (Button) findViewById(R.id.transition_scene_layoutid_cache);
+//        fab = (Button) findViewById(R.id.transition_scene_layoutid_cache);
 
-        //Floating buttons
+//        Floating buttons
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1279,58 +1276,78 @@ public class MainActivity extends LocalizationActivity implements NavigationView
         } else {
             super.onBackPressed();
         }
+
+        if (doubleBackToExitPressedOnce) {super.onBackPressed();
+
+            System.exit(0);
+
+            return;
+        }
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click BACK again to exit",
+                Toast.LENGTH_SHORT).show();
+
     }
 
-    private void setTextColorForMenuItem(MenuItem menuItem, @ColorRes int color) {
-        SpannableString spanString = new SpannableString(menuItem.getTitle().toString());
-        spanString.setSpan(new ForegroundColorSpan(ContextCompat.getColor(this, color)), 0, spanString.length(), 0);
-        menuItem.setTitle(spanString);
-    }
 
-
-    private void resetAllMenuItemsTextColor(NavigationView navigationView) {
-        for (int i = 0; i < navigationView.getMenu().size(); i++)
-            setTextColorForMenuItem(navigationView.getMenu().getItem(i), R.color.colorAccent);
-    }
+//    private void setTextColorForMenuItem(MenuItem menuItem, @ColorRes int color) {
+//        SpannableString spanString = new SpannableString(menuItem.getTitle().toString());
+//        spanString.setSpan(new ForegroundColorSpan(ContextCompat.getColor(this, color)), 0, spanString.length(), 0);
+//        menuItem.setTitle(spanString);
+//    }
+//
+//
+//    private void resetAllMenuItemsTextColor(NavigationView navigationView) {
+//        for (int i = 0; i < navigationView.getMenu().size(); i++)
+//            setTextColorForMenuItem(navigationView.getMenu().getItem(i), R.color.colorAccent);
+//    }
 
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.Tips_b) {
-            Intent i = new Intent(MainActivity.this, Tips.class);
-            startActivity(i);
 
-        } else if (id == R.id.Tech_b) {
-            Intent i = new Intent(MainActivity.this, Teach.class);
-            startActivity(i);
+            if (id == R.id.Tips_b) {
+                Intent i = new Intent(MainActivity.this, Tips.class);
+                startActivity(i);
 
-
-        } else if (id == R.id.web_arina) {
-            Intent intent = new Intent(MainActivity.this, WebView.class);
-            intent.putExtra("GSM", "http://www.dailystockbangladesh.com");
-            startActivity(intent);
-
-        } else if (id == R.id.web_android) {
-            Intent intent = new Intent(MainActivity.this, WebView.class);
-            intent.putExtra("AND", "http://www.androidhive.info/");
-            startActivity(intent);
-
-        } else if (id == R.id.share_b) {
-            Intent intent = new Intent();
-            intent.setAction(Intent.ACTION_SEND);
-            intent.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=androidsurgery.greendustbd.androidsurgery");
-            intent.setType("text/plain");
-            startActivity(Intent.createChooser(intent,"Share it!"));
+            } else if (id == R.id.Tech_b) {
+                Intent i = new Intent(MainActivity.this, Teach.class);
+                startActivity(i);
 
 
-        } else if (id == R.id.rate_b) {
-            rateApp.setData(Uri.parse("https://play.google.com/store/apps/details?id=androidsurgery.greendustbd.androidsurgery"));
-            startActivity(rateApp);
-        }
+            } else if (id == R.id.web_arina) {
+                Intent intent = new Intent(MainActivity.this, WebView.class);
+                intent.putExtra("GSM", "http://www.androidpolice.com/");
+                startActivity(intent);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
+            } else if (id == R.id.web_android) {
+                Intent intent = new Intent(MainActivity.this, WebView.class);
+                intent.putExtra("AND", "https://www.androidpit.com/");
+                startActivity(intent);
+
+            } else if (id == R.id.web_androidAu) {
+                Intent intent = new Intent(MainActivity.this, WebView.class);
+                intent.putExtra("ANDAu", "http://www.androidauthority.com/");
+                startActivity(intent);
+
+            } else if (id == R.id.share_b) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=androidsurgery.greendustbd.androidsurgery");
+                intent.setType("text/plain");
+                startActivity(Intent.createChooser(intent, "Share it!"));
+
+
+            } else if (id == R.id.rate_b) {
+                rateApp.setData(Uri.parse("https://play.google.com/store/apps/details?id=androidsurgery.greendustbd.androidsurgery"));
+                startActivity(rateApp);
+
+
+            }
+                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+                drawer.closeDrawer(GravityCompat.START);
+                return true;
+            }
+
     }
-}

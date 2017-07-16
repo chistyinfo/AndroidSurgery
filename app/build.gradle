@@ -22,14 +22,23 @@ android {
         applicationId "androidsurgery.greendustbd.androidsurgery"
         minSdkVersion 19
         targetSdkVersion 24
-        versionCode 6
-        versionName "1.6"
+        versionCode 7
+        versionName "1.7"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
+        debug {
+            shrinkResources true
+            minifyEnabled true
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
         release {
-            minifyEnabled false
+            shrinkResources true
+            minifyEnabled true
+            useProguard true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }

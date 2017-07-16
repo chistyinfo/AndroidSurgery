@@ -10,7 +10,7 @@
     tools:showIn="@layout/activity_single_teach">
 
     <androidsurgery.greendustbd.androidsurgery.font.FontelloTextView
-        android:id="@+id/txvb"
+        android:id="@+id/txvte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"

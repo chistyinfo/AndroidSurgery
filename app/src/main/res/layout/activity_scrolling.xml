@@ -3,10 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="androidsurgery.greendustbd.androidsurgery.ScrollingActivity">
+    tools:context="androidsurgery.greendustbd.androidsurgery.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
@@ -103,7 +102,5 @@
 
 
     </FrameLayout>
-
-
 
 </android.support.design.widget.CoordinatorLayout>

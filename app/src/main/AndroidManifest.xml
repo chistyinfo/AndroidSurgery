@@ -29,7 +29,8 @@
         <activity android:name=".Tips" />
         <activity android:name=".SingleTipsActivity" />
         <activity android:name=".Teach" />
-        <activity android:name=".WebView"></activity>
+        <activity android:name=".WebView" />
+        <activity android:name=".SingleTeachActivity"></activity>
     </application>
 
 </manifest>

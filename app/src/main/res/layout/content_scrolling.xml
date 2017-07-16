@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="androidsurgery.greendustbd.androidsurgery.ScrollingActivity"
+    tools:context="androidsurgery.greendustbd.androidsurgery.MainActivity"
     tools:showIn="@layout/activity_scrolling">
 
     <TableLayout
@@ -554,7 +554,8 @@
         </TableRow>
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp"/>
+            android:layout_height="100dp"/>
+
 
 
 

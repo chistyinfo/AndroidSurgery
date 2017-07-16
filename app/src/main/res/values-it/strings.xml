@@ -1,11 +1,25 @@
 <resources>
+
     <!--Admob for testing-->
+    <string name="banner_Test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_web">ca-app-pub-2233261441949271/5939794341</string>
     <string name="native_Ad">ca-app-pub-2233261441949271/6260975547</string>
-    <string name="app_title">আপনার অ্যান্ড্রয়েডের সব সমাধান এক অ্যাপেই ।</string>
+    <string name="Teach_ad">ca-app-pub-2233261441949271/5021464340</string>
+    <string name="Tips_ad">ca-app-pub-2233261441949271/6498197547</string>
     <string name="native_TEST">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="facebook_app_id">322650934857067</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_title">এক অ্যাপের  মধ্যেই  সব কিছু ।</string>
+    <string name="url_teach">https://greendustbdplus.000webhostapp.com/androidsurgery/teachb.json</string>
+    <string name="tips">অ্যান্ড্রয়েড টিপস</string>
+    <string name="technology">টেকনোলজি নিউজ </string>
+    <string name="websites">ওয়েবসাইট</string>
+    <string name="and_pol">অ্যান্ড্রয়েড পুলিশ </string>
+    <string name="and_pit">অ্যান্ড্রয়েডপিট </string>
+    <string name="and_aut">অ্যান্ড্রয়েড অথরিটি </string>
+    <string name="others">অন্যান্য </string>
+    <string name="share">শেয়ার </string>
+    <string name="rateus">রেটিং</string>
     <string name="app_name">অ্যান্ড্রয়েড সার্জারি </string>
     <string name="dialog_title">মনোযোগ সহকারে পড়ুন!</string>
     <string name="ok">করুন</string>

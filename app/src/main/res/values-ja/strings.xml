@@ -1,11 +1,25 @@
 <resources>
+
     <!--Admob for testing-->
+    <string name="banner_Test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_web">ca-app-pub-2233261441949271/5939794341</string>
     <string name="native_Ad">ca-app-pub-2233261441949271/6260975547</string>
-    <string name="app_title">An app for your android solution</string>
+    <string name="Teach_ad">ca-app-pub-2233261441949271/5021464340</string>
+    <string name="Tips_ad">ca-app-pub-2233261441949271/6498197547</string>
     <string name="native_TEST">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="facebook_app_id">322650934857067</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_title">All in one app</string>
+    <string name="tips">Android Tips</string>
+    <string name="url_teach">https://greendustbdplus.000webhostapp.com/androidsurgery/teach.json</string>
+    <string name="technology">Technology News</string>
+    <string name="websites">Websites</string>
+    <string name="and_pol">Android Police</string>
+    <string name="and_pit">Android Pit</string>
+    <string name="and_aut">Android Authority</string>
+    <string name="others">Others</string>
+    <string name="share">Share</string>
+    <string name="rateus">Rate Us</string>
     <string name="app_name">Android Surgery</string>
     <string name="ln">বাং</string>
     <string name="dialog_title">Read carefully !</string>

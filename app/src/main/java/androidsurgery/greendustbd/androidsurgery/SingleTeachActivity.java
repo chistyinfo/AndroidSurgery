@@ -16,7 +16,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 
-public class SingleTipsActivity extends AppCompatActivity {
+public class SingleTeachActivity extends AppCompatActivity {
     private ImageView imageView;
     private TextView textView;
     private InterstitialAd mInterstitialAd;
@@ -24,10 +24,10 @@ public class SingleTipsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_single_tips);
-        imageView= (ImageView) findViewById(R.id.imati);
-        textView= (TextView) findViewById(R.id.txvti);
+        setContentView(R.layout.activity_single_teach);
 
+        imageView= (ImageView) findViewById(R.id.imate);
+        textView= (TextView) findViewById(R.id.txvte);
         //InterstitialAd
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-2233261441949271/7974930748");
@@ -35,7 +35,7 @@ public class SingleTipsActivity extends AppCompatActivity {
             @Override
             public void onAdClosed() {
 
-                Intent intent = new Intent(SingleTipsActivity.this, Tips.class);
+                Intent intent = new Intent(SingleTeachActivity.this, Teach.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                         | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
@@ -54,7 +54,7 @@ public class SingleTipsActivity extends AppCompatActivity {
 
         Bitmap bmp = BitmapFactory.decodeByteArray(b, 0, b.length);
         BitmapDrawable background = new BitmapDrawable(bmp);
-        findViewById(R.id.imati).setBackgroundDrawable(background);
+        findViewById(R.id.imate).setBackgroundDrawable(background);
 
 
         String _textView=getIntent().getStringExtra("Details");
@@ -86,7 +86,7 @@ public class SingleTipsActivity extends AppCompatActivity {
             mInterstitialAd.show();
 
         } else {
-            Intent intent = new Intent(SingleTipsActivity.this, Tips.class);
+            Intent intent = new Intent(SingleTeachActivity.this, Teach.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                     | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
@@ -102,4 +102,3 @@ public class SingleTipsActivity extends AppCompatActivity {
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }
-

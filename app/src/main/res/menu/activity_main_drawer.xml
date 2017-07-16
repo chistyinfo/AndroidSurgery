@@ -6,24 +6,28 @@
         <item
             android:id="@+id/Tips_b"
             android:icon="@drawable/ic_tech"
-            android:title="Tips" />
+            android:title="@string/tips" />
         <item
             android:id="@+id/Tech_b"
             android:icon="@drawable/ic_icl_tip"
-            android:title="Technology News" />
+            android:title="@string/technology" />
 
     </group>
 
-    <item android:title="Websites">
+    <item android:title="@string/websites">
         <menu>
             <item
                 android:id="@+id/web_arina"
                 android:icon="@drawable/ic_worldwide"
-                android:title="GSM Areina" />
+                android:title="@string/and_pol" />
             <item
                 android:id="@+id/web_android"
                 android:icon="@drawable/ic_worldwide"
-                android:title="Android" />
+                android:title="@string/and_pit" />
+            <item
+                android:id="@+id/web_androidAu"
+                android:icon="@drawable/ic_worldwide"
+                android:title="@string/and_aut" />
         </menu>
     </item>
     <item android:title="Others">
@@ -31,11 +35,11 @@
             <item
                 android:id="@+id/share_b"
                 android:icon="@drawable/ic_social_share_symbol"
-                android:title="Share" />
+                android:title="@string/share" />
             <item
                 android:id="@+id/rate_b"
                 android:icon="@drawable/ic_star"
-                android:title="Rate us" />
+                android:title="@string/rateus" />
         </menu>
     </item>
 

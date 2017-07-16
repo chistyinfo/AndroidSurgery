@@ -13,6 +13,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidsurgery.greendustbd.androidsurgery.font.FontelloTextView
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Please wait to page load...."
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerInParent="true" />
+
 
         <WebView
             android:id="@+id/webView"
@@ -22,38 +31,16 @@
             android:layout_alignParentTop="true" />
 
 
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_web"
+            android:layout_alignParentBottom="true">
+        </com.google.android.gms.ads.AdView>
 
-        <!--<android.support.design.widget.FloatingActionButton-->
-            <!--android:id="@+id/fabBtn2"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="bottom|right"-->
-            <!--android:src="@drawable/ic_skip_previous"-->
-            <!--android:layout_marginBottom="80dp"-->
-            <!--app:backgroundTint="@android:color/holo_blue_dark"-->
-            <!--app:elevation="6dp"-->
-            <!--app:fabSize="normal"-->
-            <!--android:stateListAnimator="@drawable/fab_raise"-->
-            <!--android:layout_alignParentBottom="true"-->
-            <!--android:layout_alignParentRight="true"-->
-            <!--android:layout_alignParentEnd="true" />-->
 
-        <!--<com.google.android.gms.ads.AdView-->
-            <!--android:id="@+id/adView"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--ads:adSize="SMART_BANNER"-->
-            <!--ads:adUnitId="@string/banner_ad_unit_id"-->
-            <!--android:layout_alignParentBottom="true">-->
-        <!--</com.google.android.gms.ads.AdView>-->
-
-        <!--<greendust.sharebdplus.PointLoadingChangePositionView-->
-            <!--android:layout_width="60dp"-->
-            <!--android:layout_height="30dp"-->
-            <!--android:layout_below="@+id/webView"-->
-            <!--android:id="@+id/pointLoadingChangePositionView"-->
-            <!--android:layout_centerVertical="true"-->
-            <!--android:layout_centerHorizontal="true" />-->
 
 
     </RelativeLayout>

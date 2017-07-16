@@ -13,6 +13,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.aapbd.appbajarlib.notification.BusyDialog;
 import com.android.volley.Response;
@@ -20,6 +21,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.NetworkImageView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.NativeExpressAdView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -48,6 +51,9 @@ public class Teach extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teach);
         con = this;
+        //native add
+        NativeExpressAdView adView = (NativeExpressAdView) findViewById(R.id.adViewte);
+        adView.loadAd(new AdRequest.Builder().build());
         tlistView = (ListView) findViewById(R.id.teach_list);
         tadapter = new CustomTipsListAdapter(this, teachList);
         tlistView.setAdapter(tadapter);
@@ -130,6 +136,9 @@ public class Teach extends AppCompatActivity {
             AppController.getInstance().addToRequestQueue(bookReq);
 
         } else {
+
+            Toast.makeText(this, "Please check your Internet Connection",
+                    Toast.LENGTH_LONG).show();
 
 //            webView = (WebView) findViewById(R.id.wvBk);
 //            webView.loadUrl("file:///android_asset/notification.png");
