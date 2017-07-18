@@ -17,17 +17,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.akexorcist.localizationactivity.LocalizationActivity;
 import com.crashlytics.android.Crashlytics;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.NativeExpressAdView;
+import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
 
 import io.fabric.sdk.android.Fabric;
 import pl.droidsonroids.gif.GifDrawable;
+
 
 public class MainActivity extends LocalizationActivity implements NavigationView.OnNavigationItemSelectedListener{
     private Button button1, button2, button3, button4, button5, button6, button7, button8, button9, button10,
@@ -49,11 +52,18 @@ public class MainActivity extends LocalizationActivity implements NavigationView
 
         rateApp = new Intent(Intent.ACTION_VIEW);
 
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
+
+        ImageView imageView = (ImageView) findViewById(R.id.imageView);
+
+        Picasso.with(this)
+                .load("https://greendustbdplus.000webhostapp.com/androidsurgery/backgc.jpg")
+                .into(imageView);
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);

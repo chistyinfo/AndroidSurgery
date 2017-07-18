@@ -49,7 +49,7 @@
         android:layout_alignParentBottom="true"
         android:layout_gravity="center"
         ads:adSize="340x80"
-        ads:adUnitId="@string/Tips_ad">
+        ads:adUnitId="@string/Teach_ad">
         </com.google.android.gms.ads.NativeExpressAdView>
 
 

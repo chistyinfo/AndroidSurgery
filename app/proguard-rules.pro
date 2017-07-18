@@ -26,3 +26,4 @@
 #-dontwarn
 -dontwarn com.aapbd.**
 -dontwarn com.aapbd.utils.**
+-dontwarn com.squareup.picasso.**

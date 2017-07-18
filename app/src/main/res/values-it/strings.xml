@@ -3,7 +3,7 @@
     <!--Admob for testing-->
     <string name="banner_Test">ca-app-pub-3940256099942544/6300978111</string>
     <string name="banner_web">ca-app-pub-2233261441949271/5939794341</string>
-    <string name="native_Ad">ca-app-pub-2233261441949271/6260975547</string>
+    <string name="andorid_surgery_native">ca-app-pub-2233261441949271/6260975547</string>
     <string name="Teach_ad">ca-app-pub-2233261441949271/5021464340</string>
     <string name="Tips_ad">ca-app-pub-2233261441949271/6498197547</string>
     <string name="native_TEST">ca-app-pub-3940256099942544/6300978111</string>
