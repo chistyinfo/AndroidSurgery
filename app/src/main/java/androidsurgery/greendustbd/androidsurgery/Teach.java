@@ -6,8 +6,8 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
@@ -32,18 +32,19 @@ import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import androidsurgery.greendustbd.androidsurgery.TipsVolley.CustomTipsListAdapter;
+import androidsurgery.greendustbd.androidsurgery.TechInfoVolley.CustomTeachInfoListAdapter;
+import androidsurgery.greendustbd.androidsurgery.TechInfoVolley.Teachinfo;
 
 public class Teach extends AppCompatActivity {
     // Log tag
-    private static final String TAG = Tips.class.getSimpleName();
+    private static final String TAG = Teach.class.getSimpleName();
     // Movies json url
     private static final String url = "https://greendustbdplus.000webhostapp.com/androidsurgery/teach.json";
-    private List<androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips> teachList = new ArrayList<androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips>();
+    private List<Teachinfo> teachList = new ArrayList<Teachinfo>();
     private ListView tlistView;
-    String[] DetailsArray;
+    private String[] DetailsArray;
     private Context con;
-    private CustomTipsListAdapter tadapter;
+    private CustomTeachInfoListAdapter tadapter;
     private WebView webView;
 
     @Override
@@ -55,7 +56,7 @@ public class Teach extends AppCompatActivity {
         NativeExpressAdView adView = (NativeExpressAdView) findViewById(R.id.adViewte);
         adView.loadAd(new AdRequest.Builder().build());
         tlistView = (ListView) findViewById(R.id.teach_list);
-        tadapter = new CustomTipsListAdapter(this, teachList);
+        tadapter = new CustomTeachInfoListAdapter(this, teachList);
         tlistView.setAdapter(tadapter);
         tlistView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -85,7 +86,7 @@ public class Teach extends AppCompatActivity {
 
 
             // Creating volley request obj
-            JsonArrayRequest bookReq = new JsonArrayRequest(url,
+            JsonArrayRequest teachReq = new JsonArrayRequest(url,
                     new Response.Listener<JSONArray>() {
                         @Override
                         public void onResponse(JSONArray response) {
@@ -99,15 +100,14 @@ public class Teach extends AppCompatActivity {
                                 try {
 
                                     JSONObject obj = response.getJSONObject(i);
-                                    androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips book = new androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips();
-                                    book.setTitle(obj.getString("title"));
-                                    book.setThumbnailUrl(obj.getString("image"));
-                                    book.setSummary(obj.getString("summary"));
+                                    Teachinfo teach = new Teachinfo();
+                                    teach.setTitle(obj.getString("title"));
+                                    teach.setThumbnailUrl(obj.getString("image"));
+                                    teach.setSummary(obj.getString("summary"));
                                     //url capturing form server
                                     DetailsArray[i] = obj.getString("details");
 
-                                    // adding movie to movies array
-                                    teachList.add(book);
+                                    teachList.add(teach);
 
                                 } catch (JSONException e) {
                                     e.printStackTrace();
@@ -133,7 +133,7 @@ public class Teach extends AppCompatActivity {
 
                 }
             });
-            AppController.getInstance().addToRequestQueue(bookReq);
+            AppController.getInstance().addToRequestQueue(teachReq);
 
         } else {
 

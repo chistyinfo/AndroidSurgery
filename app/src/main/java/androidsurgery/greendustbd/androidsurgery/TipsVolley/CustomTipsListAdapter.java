@@ -21,23 +21,23 @@ import androidsurgery.greendustbd.androidsurgery.R;
 public class CustomTipsListAdapter extends BaseAdapter {
 	private Activity activity;
 	private LayoutInflater inflater;
-	private List<Tips> bookItems;
+	private List<Tipsinfo> tipsItems;
 	ImageLoader imageLoader = AppController.getInstance().getImageLoader();
 
-	public CustomTipsListAdapter(AppCompatActivity appCompatActivity, List<Tips> bookItems) {
+	public CustomTipsListAdapter(AppCompatActivity appCompatActivity, List<Tipsinfo> tipsItems) {
 		this.activity = appCompatActivity;
-		this.bookItems = bookItems;
+		this.tipsItems = tipsItems;
 
 	}
 
 	@Override
 	public int getCount() {
-		return bookItems.size();
+		return tipsItems.size();
 	}
 
 	@Override
 	public Object getItem(int location) {
-		return bookItems.get(location);
+		return tipsItems.get(location);
 	}
 
 	@Override
@@ -63,7 +63,7 @@ public class CustomTipsListAdapter extends BaseAdapter {
 
 
 		// getting movie data for the row
-		Tips m = bookItems.get(position);
+		Tipsinfo m = tipsItems.get(position);
 
 		// thumbnail image
 		thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);

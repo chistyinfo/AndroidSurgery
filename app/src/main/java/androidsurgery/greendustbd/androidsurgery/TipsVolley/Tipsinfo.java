@@ -1,14 +1,14 @@
 package androidsurgery.greendustbd.androidsurgery.TipsVolley;
 
-public class Tips {
+public class Tipsinfo {
 	private String title,thumbnailUrl;
 	private String summary;
 	private String writer;
 
-	public Tips() {
+	public Tipsinfo() {
 	}
 
-	public Tips(String name, String thumbnailUrl, String summary
+	public Tipsinfo(String name, String thumbnailUrl, String summary
                 ) {
 		this.title = name;
 		this.thumbnailUrl = thumbnailUrl;

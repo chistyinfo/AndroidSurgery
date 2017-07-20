@@ -53,7 +53,7 @@ Locked mobile phones are usually GSM phones that use a SIM card - hence the use 
 </string>
     <string name="dbattery">Display information about Phone, Battery and Usage statistics. The code is \n *#*#1111#*#*\n</string>
     <string name="dfta">Fault Tree Analysis is one of the most widely used methods in system reliability and failure probability analysis.The code is \n *#*#2664#*#*\n</string>
-    <string name="dtouch">Have you been having problems with the touch screen on your smartphone? The code is \n \nLooking for a quick way to check for dead spots, or verify that some areas of the screen are truly unresponsive? Here is a cool trick that should allow you to check your entire touch screen in a matter of seconds.</string>
+    <string name="dtouch">Have you been having problems with the touch screen on your smartphone? The code is \n*#*#2664#*#* \n \nLooking for a quick way to check for dead spots, or verify that some areas of the screen are truly unresponsive? Here is a cool trick that should allow you to check your entire touch screen in a matter of seconds.</string>
     <string name="dvibrate">This code is used for Backlight/vibration test. The code is \n *#*#0842#*#*\n... You can run various tests and change settings in the service mode.</string>
     <string name="dhardware">For checking software and hardware information.The code is \n *#12580*369#\n</string>
     <string name="ddiagonostic">Diagnostic Configuration is the inner working configuration of Android Smartphone.The code is \n *#9090#\n</string>

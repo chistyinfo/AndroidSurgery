@@ -33,15 +33,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidsurgery.greendustbd.androidsurgery.TipsVolley.CustomTipsListAdapter;
+import androidsurgery.greendustbd.androidsurgery.TipsVolley.Tipsinfo;
 
 public class Tips extends AppCompatActivity {
     // Log tag
     private static final String TAG = Tips.class.getSimpleName();
     // Movies json url
     private static final String url = "https://greendustbdplus.000webhostapp.com/androidsurgery/tips.json";
-    private List<androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips> bookList = new ArrayList<androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips>();
+    private List<Tipsinfo> tipsList = new ArrayList<Tipsinfo>();
     private ListView tilistView;
-    String[] DetailsArray;
+    private String[] DetailsArray;
     private Context con;
     private CustomTipsListAdapter tiadapter;
     private WebView webView;
@@ -51,12 +52,13 @@ public class Tips extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips);
         con = this;
+
         //native add
         NativeExpressAdView adView = (NativeExpressAdView) findViewById(R.id.adViewti);
         adView.loadAd(new AdRequest.Builder().build());
 
         tilistView = (ListView) findViewById(R.id.tips_list);
-        tiadapter = new CustomTipsListAdapter(this, bookList);
+        tiadapter = new CustomTipsListAdapter(this, tipsList);
         tilistView.setAdapter(tiadapter);
         tilistView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -86,7 +88,7 @@ public class Tips extends AppCompatActivity {
 
 
             // Creating volley request obj
-            JsonArrayRequest bookReq = new JsonArrayRequest(url,
+            JsonArrayRequest tipsReq = new JsonArrayRequest(url,
                     new Response.Listener<JSONArray>() {
                         @Override
                         public void onResponse(JSONArray response) {
@@ -100,16 +102,16 @@ public class Tips extends AppCompatActivity {
                                 try {
 
                                     JSONObject obj = response.getJSONObject(i);
-                                    androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips book = new androidsurgery.greendustbd.androidsurgery.TipsVolley.Tips();
-                                    book.setTitle(obj.getString("title"));
-                                    book.setThumbnailUrl(obj.getString("image"));
-                                    book.setSummary(obj.getString("summary"));
-//                                    book.setWriter(obj.getString("writer"));
+                                    Tipsinfo tips = new Tipsinfo();
+                                    tips.setTitle(obj.getString("title"));
+                                    tips.setThumbnailUrl(obj.getString("image"));
+                                    tips.setSummary(obj.getString("summary"));
+//                                    tips.setWriter(obj.getString("writer"));
                                     //url capturing form server
                                     DetailsArray[i] = obj.getString("details");
 
                                     // adding movie to movies array
-                                    bookList.add(book);
+                                    tipsList.add(tips);
 
                                 } catch (JSONException e) {
                                     e.printStackTrace();
@@ -135,7 +137,7 @@ public class Tips extends AppCompatActivity {
 
                 }
             });
-            AppController.getInstance().addToRequestQueue(bookReq);
+            AppController.getInstance().addToRequestQueue(tipsReq);
 
         } else {
             Toast.makeText(this, "Please check your Internet Connection",
